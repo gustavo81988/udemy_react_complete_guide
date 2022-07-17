@@ -1,9 +1,11 @@
-import AppUser from './components/Users/AddUser';
+import AddUser from './components/Users/AddUser';
+import UsersLists from './components/Users/UsersLists';
 
 function App() {
   return (
     <div className="App">
-      <AppUser/>
+      <AddUser/>
+      <UsersLists users={[]}/>
     </div>
   );
 }
