@@ -17,9 +17,9 @@ const AddUser = (props) => {
             return;
         }
 
+        props.onAddUser(enteredUsername,enteredAge);
         setEnteredUsername('');
         setEnteredAge('');
-        console.log(enteredUsername,enteredAge);
     }
 
     const usernameChangeHandler = (event) => {
@@ -40,7 +40,7 @@ const AddUser = (props) => {
                     value={enteredUsername}
                     onChange={usernameChangeHandler}
                 />
-                
+
                 <label htmlFor="age">Age (Years)</label>
                 <input
                     id="age"
