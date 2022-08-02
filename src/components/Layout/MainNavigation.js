@@ -9,9 +9,10 @@ const MainNavigation = () => {
 
   const isLoggedIn = authCtx.isLoggedIn;
 
-  const logoutHandler = () =>{
+  const logoutHandler = () => {
     authCtx.logout();
-  }
+    // optional: redirect the user
+  };
 
   return (
     <header className={classes.header}>
